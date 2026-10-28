@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Whale Trader's Toolkit — the complete Notion system for trading with whale flow</title>
+<meta name="description" content="Daily setup dashboard, whale flow tracker, trade journal, watchlist, weekly framework, and risk calculator in one Notion system." />
+<style>
+  :root{
+    --bg:#0b0f14; --card:#141b24; --line:#223040; --txt:#e8eef5; --muted:#93a4b8;
+    --gold:#e8b64c; --gold-dim:#c99a34; --green:#3fbf7f;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:28px 18px 56px; background:var(--bg); color:var(--txt);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    display:flex; justify-content:center;
+  }
+  .wrap{width:100%; max-width:560px}
+  .kicker{ letter-spacing:.18em; text-transform:uppercase; font-size:11px; color:var(--gold); font-weight:700; text-align:center }
+  h1{ font-size:27px; line-height:1.2; margin:10px 0 8px; letter-spacing:-.02em; text-align:center }
+  .sub{ color:var(--muted); font-size:15px; margin:0 auto; max-width:430px; line-height:1.45; text-align:center }
+  .price{ text-align:center; margin:18px 0 22px }
+  .price .amt{ font-size:34px; font-weight:800; color:var(--gold); letter-spacing:-.02em }
+  .price .was{ color:var(--muted); font-size:13px; margin-top:2px }
+  .btns{ display:flex; flex-direction:column; gap:12px }
+  .btn{
+    display:block; text-decoration:none; color:var(--txt); background:var(--card);
+    border:1px solid var(--line); border-radius:14px; padding:16px 18px;
+    transition:transform .12s ease, border-color .12s ease, background .12s ease;
+  }
+  .btn:hover{ transform:translateY(-2px); border-color:var(--gold-dim); background:#18212c }
+  .btn .lbl{ font-weight:700; font-size:17px; display:block }
+  .btn .sub2{ color:var(--muted); font-size:13.5px; margin-top:4px; display:block; line-height:1.35 }
+  .btn.primary{ border-color:var(--gold); background:linear-gradient(180deg,#1d2430,#151b24) }
+  .btn.primary .lbl{ color:var(--gold) }
+  .btn.small{ padding:13px 18px }
+  .btn.small .lbl{ font-size:15px }
+  .tag{ display:inline-block; font-size:10.5px; font-weight:800; letter-spacing:.1em; text-transform:uppercase;
+        color:#0b0f14; background:var(--gold); border-radius:999px; padding:3px 9px; margin-bottom:9px }
+  .tag.free{ background:var(--green) }
+  h2.sec{ font-size:12px; text-transform:uppercase; letter-spacing:.09em; color:var(--gold); margin:28px 0 12px; font-weight:800 }
+  ul.features{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:9px }
+  ul.features li{ display:flex; gap:10px; align-items:flex-start; font-size:14px; line-height:1.45; color:var(--txt) }
+  ul.features li .tick{ color:var(--green); font-weight:800; flex:0 0 auto }
+  ul.features li .d{ color:var(--muted); font-size:12.5px; display:block; margin-top:1px }
+  .who{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 18px; font-size:14px; line-height:1.5 }
+  .note{ margin-top:24px; padding:14px 16px; border:1px solid var(--line); border-radius:12px; color:var(--muted); font-size:12.5px; line-height:1.5 }
+  .note strong{ color:var(--txt) }
+  footer{ margin-top:28px; text-align:center; color:#5d6c7e; font-size:11.5px; line-height:1.55 }
+  hr{ border:0; border-top:1px solid var(--line); margin:24px 0 }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">Whale Trader's Toolkit</div>
+  <h1>The complete Notion system for trading with institutional flow.</h1>
+  <p class="sub">Every setup, entry, level, and result in one system — instead of scattered screenshots and notes.</p>
+
+  <div class="price">
+    <div class="amt">$27</div>
+    <div class="was">Launch price (regular $47)</div>
+  </div>
+
+  <div class="btns">
+    <a class="btn primary" href="https://gumroad.com/l/whale-traders-toolkit" target="_blank" rel="noopener">
+      <span class="lbl">Get the Toolkit — $27</span>
+      <span class="sub2">Instant download. Notion template (duplicate in one click) + video walkthrough.</span>
+    </a>
+
+    <a class="btn small" href="https://t.me/8444602023?text=Hi%20%E2%80%94%20I%20want%20the%20Whale%20Trader%27s%20Toolkit%20(%247).%20How%20do%20I%20get%20it%3F" target="_blank" rel="noopener">
+      <span class="lbl">Or DM me on Telegram</span>
+      <span class="sub2">If the instant checkout is still spinning, message me and I'll get it to you directly.</span>
+    </a>
+
+    <a class="btn small" href="cheatsheet.html">
+      <span class="tag free">Free first</span>
+      <span class="lbl">Start with the free 1-page cheat sheet</span>
+      <span class="sub2">Try the method before you buy anything.</span>
+    </a>
+  </div>
+
+  <h2 class="sec">What's inside</h2>
+  <ul class="features">
+    <li><span class="tick">✅</span><span>Daily Setup Dashboard<span class="d">Market prep, key levels, VIX, sector rotation — one screen before the open.</span></span></li>
+    <li><span class="tick">✅</span><span>Whale Flow Tracker<span class="d">Options flow and dark pool prints logged with the read you made at the time.</span></span></li>
+    <li><span class="tick">✅</span><span>Complete Trade Journal<span class="d">P&amp;L, win rate, R:R, and the reason for every entry — so patterns become visible.</span></span></li>
+    <li><span class="tick">✅</span><span>Watchlist Manager<span class="d">Levels, alerts, catalysts, and invalidation lines for every name you track.</span></span></li>
+    <li><span class="tick">✅</span><span>Weekly Analysis Framework<span class="d">A repeatable review instead of re-deciding from scratch every Sunday.</span></span></li>
+    <li><span class="tick">✅</span><span>Risk Calculator<span class="d">Position sizing off your invalidation line, including a Kelly Criterion view.</span></span></li>
+    <li><span class="tick">✅</span><span>18-minute video walkthrough<span class="d">How to set it up and use it the same way I do.</span></span></li>
+  </ul>
+
+  <h2 class="sec">Who it's for</h2>
+  <div class="who">
+    Day and swing traders who follow whale flow and want every setup, entry, and result tracked in one system
+    instead of scattered screenshots.
+  </div>
+
+  <h2 class="sec">Format &amp; what it is not</h2>
+  <div class="note">
+    <strong>Format:</strong> Notion template (duplicate it in one click) + video walkthrough.<br/>
+    <strong>Not included:</strong> signals, alerts, trade recommendations, or any managed service. This is a
+    <strong>process system</strong> — it structures the way you read flow and track your own results.<br/>
+    <strong>Educational content only</strong> — not financial advice. No performance guarantees.
+  </div>
+
+  <hr/>
+  <footer>
+    Educational content only — not financial advice. No performance claims or guarantees.<br/>
+    Trading involves risk of loss. Do your own research.
+  </footer>
+</div>
+</body>
+</html>

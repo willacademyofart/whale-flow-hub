@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Whale Flow Cheat Sheet (1 page)</title>
+<style>
+  @page { size: letter; margin: 0.4in; }
+  :root{ --ink:#111820; --muted:#5b6b7d; --line:#d8e0e8; --accent:#8a6a10; --accentbg:#fdf6e3; }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:26px 22px; color:var(--ink); background:#fff;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    font-size:12.6px; line-height:1.42; -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  .page{ max-width:760px; margin:0 auto }
+  h1{ font-size:22px; margin:0 0 2px; letter-spacing:-.02em }
+  .kicker{ font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); font-weight:800 }
+  .lede{ color:var(--muted); margin:6px 0 14px; font-size:12.5px }
+  h2{ font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:var(--accent);
+      margin:16px 0 7px; padding-bottom:4px; border-bottom:1px solid var(--line) }
+  h3{ font-size:12.6px; margin:10px 0 4px }
+  p{ margin:5px 0 }
+  ul{ margin:5px 0 5px 0; padding-left:17px }
+  li{ margin:3px 0 }
+  .grid3{ display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:6px }
+  .card{ border:1px solid var(--line); border-radius:8px; padding:8px 10px }
+  .card .k{ font-weight:800; font-size:11.6px; margin-bottom:3px }
+  .card .d{ color:var(--muted); font-size:11.4px; line-height:1.35 }
+  .rules{ counter-reset:r; list-style:none; padding-left:0 }
+  .rules li{ counter-increment:r; margin:4px 0; padding-left:22px; position:relative }
+  .rules li::before{ content:counter(r); position:absolute; left:0; top:0;
+    width:15px; height:15px; border-radius:50%; background:var(--accentbg); color:var(--accent);
+    font-weight:800; font-size:9.5px; display:flex; align-items:center; justify-content:center }
+  table{ width:100%; border-collapse:collapse; margin-top:6px; font-size:11.8px }
+  th,td{ border:1px solid var(--line); padding:5px 7px; text-align:left; vertical-align:top }
+  th{ background:#f4f7fa; font-size:10.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--muted) }
+  .plan{ background:var(--accentbg); border:1px solid #ecdcab; border-radius:8px; padding:9px 11px; margin-top:6px }
+  .plan b{ color:var(--accent) }
+  .cta{ margin-top:15px; border:1px solid var(--line); border-left:3px solid var(--accent);
+        border-radius:6px; padding:9px 11px; font-size:11.8px; background:#fbfcfe }
+  .disclaimer{ margin-top:14px; color:var(--muted); font-size:10.4px; border-top:1px solid var(--line); padding-top:7px }
+  .qa{ display:grid; grid-template-columns:1fr 1fr; gap:10px }
+  @media print{ body{padding:0} }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="kicker">Whale Flow Cheat Sheet · 1 Page</div>
+  <h1>Read Whale Flow Without Getting Faked Out</h1>
+  <div class="lede">A simple, repeatable way to read options flow before you risk money. Flow is a radar ping — not a trade signal.</div>
+
+  <h2>1) The 30-Second Flow Decoder</h2>
+  <div class="grid3">
+    <div class="card"><div class="k">A. What happened?</div>
+      <div class="d"><b>Sweep</b> = urgent fills across exchanges (often momentum/immediacy).<br/>
+      <b>Block</b> = negotiated large trade (often institution-sized).<br/>
+      <b>Premium ($)</b> = size/importance — confirm context (open interest, liquidity).</div></div>
+    <div class="card"><div class="k">B. Why did it happen?</div>
+      <div class="d"><b>Speculation</b> (directional bet) · <b>Hedge</b> (protection against a move) · <b>Roll</b> (close one position, open another).<br/>
+      Same print, three meanings. Guess wrong and you fade a hedge.</div></div>
+    <div class="card"><div class="k">C. Where does price matter?</div>
+      <div class="d">You only act around levels:<br/>support / resistance · VWAP · prior-day high/low · 20/50/200 MA.</div></div>
+  </div>
+
+  <h2>2) 5 Rules That Stop You From Getting Cooked</h2>
+  <ol class="rules">
+    <li><b>Flow + structure + confirmation.</b> Need all three. One is noise.</li>
+    <li><b>Trade the level, not the story.</b> Entries live at breaks and holds, not mid-range.</li>
+    <li><b>Define invalidation first.</b> Know where you are proven wrong before you enter.</li>
+    <li><b>Size smaller when IV is high.</b> Premium lies when volatility is rich.</li>
+    <li><b>No revenge trades.</b> One clean setup beats ten forced ones.</li>
+  </ol>
+
+  <h2>3) Quick Interpretation Table</h2>
+  <table>
+    <tr><th style="width:20%">Read</th><th>What it looks like</th><th style="width:34%">What to do</th></tr>
+    <tr><td><b>Bullish-ish</b></td><td>Big <b>CALL</b> premium + price <b>above support</b> + trend up; repeated sweeps at the same strike (persistence)</td><td>Wait for a level trigger; do not chase mid-range</td></tr>
+    <tr><td><b>Bearish-ish</b></td><td>Big <b>PUT</b> premium + price <b>below resistance</b> + trend down; put flow rising as price tests support</td><td>Watch for the breakdown; keep invalidation tight</td></tr>
+    <tr><td><b>Neutral / caution</b></td><td>Mixed call + put flow with no trend = hedging / churn</td><td>Stand aside. This is where accounts bleed</td></tr>
+  </table>
+
+  <h2>4) The 3-Line Plan (Write It Before You Click)</h2>
+  <div class="plan">
+    <b>Line 1 — Trigger:</b> the break/hold level that activates your idea<br/>
+    <b>Line 2 — Target:</b> the next level<br/>
+    <b>Line 3 — Invalidation:</b> where you exit if you are wrong<br/>
+    <span style="color:#6b5a2a">Example — Trigger: reclaim 610 · Target: 615 · Invalidation: lose 600</span>
+  </div>
+
+  <h2>5) Two Questions to Ask Any Scan</h2>
+  <div class="qa">
+    <div class="card"><div class="k">"Is the index helping or fighting me?"</div>
+      <div class="d">Index bias is the first filter. A perfect ticker-level setup against the tape is a trap, not a trade.</div></div>
+    <div class="card"><div class="k">"Where is my stop, in dollars?"</div>
+      <div class="d">If you cannot size the position from the invalidation line, you are not ready to enter.</div></div>
+  </div>
+
+  <div class="cta">
+    <b>Want the full system?</b> <a href="toolkit.html" style="color:#8a6a10;font-weight:700">Get the Whale Trader's Toolkit</a> — it turns this into a daily system — setup dashboard, flow tracker, trade journal with P&amp;L and win rate, watchlist, and a risk calculator. Educational process, not signals.
+  </div>
+
+  <div class="disclaimer">
+    Educational content only — not financial advice. No performance claims or guarantees. Trading involves risk of loss. Levels and flow readings shown are illustrative examples, not recommendations. Always define your invalidation and risk a small, predetermined amount.
+  </div>
+
+</div>
+</body>
+</html>
