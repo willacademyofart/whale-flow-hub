@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gap-Down Playbook — read a 3% down day without guessing</title>
+<meta name="description" content="Free 1-page playbook for reading gap-down days: the 4 levels that matter, the volume test, and the 3-line plan. Built from the October 2026 semiconductor rout." />
+<style>
+  @page { size: letter; margin: 0.3in; }
+  :root{ --ink:#111820; --muted:#5b6b7d; --line:#d8e0e8; --accent:#8a6a10; --accentbg:#fdf6e3; --red:#9b2c2c; --redbg:#fdf0ef; }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:18px 18px; color:var(--ink); background:#fff;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    font-size:10.7px; line-height:1.22; -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  .page{ max-width:760px; margin:0 auto }
+  h1{ font-size:20px; margin:0 0 1px; letter-spacing:-.02em }
+  .kicker{ font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); font-weight:800 }
+  .lede{ color:var(--muted); margin:4px 0 8px; font-size:11.2px }
+  h2{ font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:var(--accent);
+      margin:9px 0 4px; padding-bottom:3px; border-bottom:1px solid var(--line) }
+  p{ margin:5px 0 }
+  table{ width:100%; border-collapse:collapse; margin-top:4px; font-size:10.4px }
+  th,td{ border:1px solid var(--line); padding:3px 5px; text-align:left; vertical-align:top }
+  th{ background:#f4f7fa; font-size:10.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--muted) }
+  td.num{ text-align:right; font-variant-numeric:tabular-nums }
+  .rules{ counter-reset:r; list-style:none; padding-left:0 }
+  .rules li{ counter-increment:r; margin:2px 0; padding-left:22px; position:relative }
+  .rules li::before{ content:counter(r); position:absolute; left:0; top:0;
+    width:15px; height:15px; border-radius:50%; background:var(--accentbg); color:var(--accent);
+    font-weight:800; font-size:9.5px; display:flex; align-items:center; justify-content:center }
+  .plan{ background:var(--accentbg); border:1px solid #ecdcab; border-radius:8px; padding:7px 9px; margin-top:4px; font-size:10.4px }
+  .plan b{ color:var(--accent) }
+  .watch{ background:var(--redbg); border:1px solid #e9c9c5; border-radius:8px; padding:7px 9px; margin-top:4px; font-size:10.4px }
+  .watch b{ color:var(--red) }
+  .cta{ margin-top:9px; border:1px solid var(--line); border-left:3px solid var(--accent);
+        border-radius:6px; padding:7px 10px; font-size:10.6px; background:#fbfcfe }
+  .disclaimer{ margin-top:7px; color:var(--muted); font-size:9.4px; border-top:1px solid var(--line); padding-top:5px; line-height:1.25 }
+  .note{ color:var(--muted); font-size:9.9px; margin-top:4px; line-height:1.28 }
+  .two{ display:grid; grid-template-columns:1fr 1fr; gap:10px }
+  .card{ border:1px solid var(--line); border-radius:8px; padding:7px 9px }
+  .card .k{ font-weight:800; font-size:10.8px; margin-bottom:2px }
+  .card .d{ color:var(--muted); font-size:10.4px; line-height:1.3 }
+  @media print{ body{padding:0} }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="kicker">Gap-Down Playbook · 1 Page · Free</div>
+  <h1>Read a Big Down Day Without Guessing</h1>
+  <div class="lede">A repeatable way to read a sharp gap-down: what level matters, what volume means, and what you write down before you touch anything.</div>
+
+  <h2>1) The 4 Levels That Matter on a Gap-Down</h2>
+  <table>
+    <tr><th style="width:26%">Level</th><th>Why it matters</th><th style="width:36%">How you use it</th></tr>
+    <tr><td><b>Prior close</b></td><td>The anchor. A gap down is only meaningful relative to yesterday.</td><td>Price reclaiming prior close = sellers losing control</td></tr>
+    <tr><td><b>Gap-day low / prior-week low</b></td><td>Where the move started and where the last group of buyers sits.</td><td>Break of the low = continuation pressure, not a bounce</td></tr>
+    <tr><td><b>200-day average</b></td><td>The long-term line in the sand. Losing it changes the character of the trend.</td><td>Daily close below = regime change, not a dip</td></tr>
+    <tr><td><b>VWAP</b></td><td>Where the day's average price sits. Institutions get filled around it.</td><td>Above VWAP = buyers in control; below = sellers</td></tr>
+  </table>
+  <div class="note">Worked on the Oct 30, 2026 semi rout (public market data): SPY 755.72, QQQ 690.49, SMH 522.49, NVDA 204.64, AMD 504.80. At that close NVDA sat ~0.1% above its 200-day (204.38) and SMH ~0.6% above its own (519.50) — while INTC closed 65.76, ~24% <i>below</i> its 200-day (86.86). Same "down day," totally different structure. That's why you check the 200-day per ticker, not on the index.</div>
+
+  <h2>2) The Volume Test (1 line, do it before anything else)</h2>
+  <table>
+    <tr><th style="width:22%">Volume vs 20-day avg</th><th style="width:26%">What it usually means</th><th>How to read it</th></tr>
+    <tr><td class="num"><b>&lt; 1.0x</b></td><td>Low participation</td><td>Drift, not conviction. Often a rotation day. Size down or stand aside.</td></tr>
+    <tr><td class="num"><b>1.0x – 1.5x</b></td><td>Normal</td><td>Ordinary participation. Wait for a level to actually break.</td></tr>
+    <tr><td class="num"><b>&gt; 1.8x</b></td><td>Forced / institutional</td><td>Real repositioning. Everything else on the page matters more today, not less.</td></tr>
+  </table>
+  <div class="note">Oct 30 example: SPY 2.06x 20-day average volume, QQQ 2.32x, SMH 1.99x, AMD 2.03x, INTC 4.62x — while IWM printed only 0.97x. A violent, concentrated sector event, not a broad market liquidation.</div>
+
+  <h2>3) Is It Broad or Concentrated? (the cheapest read you'll ever do)</h2>
+  <div class="two">
+    <div class="card"><div class="k">Broad risk-off</div><div class="d">Large caps, small caps, and cyclicals all down, volume up everywhere, VIX bid. Every long gets hit. Manage risk, expect volatility to stay high.</div></div>
+    <div class="card"><div class="k">Concentrated unwind</div><div class="d">One theme or one sector gets hit hard while the rest of the index holds up (or a small-cap index barely moves). This is usually a thesis/positioning event in one crowd — not a macro wave.</div></div>
+  </div>
+  <div class="note">Use IWM + SPY as the breadth check and VIX as the "how much is priced" gauge. IWM volume under 1.0x while a sector ETF is at 2x = a crowd getting run over, not the whole market.</div>
+
+  <h2>4) 5 Rules for a Gap-Down Day</h2>
+  <ol class="rules">
+    <li><b>Never trade the first 15 minutes.</b> The gap is a price, not a signal. Wait for a level to break or hold.</li>
+    <li><b>Check the 200-day per ticker, not on the index.</b>A sector can fall 7% while sitting on its 200-day, and one name can fall 24% while the index barely blinks.</li>
+    <li><b>One level, one trigger, one invalidation.</b> If you can't name all three before entry, you're reacting, not trading.</li>
+    <li><b>Volatility expands stops.</b> When ATR expands, the same dollar risk needs fewer contracts and a wider (but still predefined) stop. Size from the invalidation line, not from conviction.</li>
+    <li><b>No averaging down into a break.</b>A gap-down that keeps making lows is a different trade than one that holds a level.</li>
+  </ol>
+
+  <h2>5) The 3-Line Plan (write it before you click)</h2>
+  <div class="plan">
+    <b>Line 1 — Trigger:</b> the level that activates the idea (e.g. "reclaim the prior close" or "hold the 200-day")<br/>
+    <b>Line 2 — Target:</b> the next level or the measured move<br/>
+    <b>Line 3 — Invalidation:</b> where you're proven wrong and out<br/>
+    <span style="color:#6b5a2a">Example — Trigger: SPY reclaims prior close 769.36 · Target: 20-day 770.47 · Invalidation: loses gap-day low 750.36</span>
+  </div>
+
+  <h2>6) The Weekend Check (5 minutes, before Monday)</h2>
+  <div class="watch">
+    <b>1.</b> Close above or below the 200-day? &nbsp; <b>2.</b> Volume > 1.8x 20-day avg? &nbsp; <b>3.</b> Broad or concentrated (SPY vs IWM)? &nbsp; <b>4.</b> Where is VIX vs its own 20-day average — fear priced or complacent? &nbsp; <b>5.</b> Write trigger, target and invalidation for every name before the open.
+  </div>
+
+  <div class="cta">
+    <b>Want the full system?</b> <a href="toolkit.html" style="color:#8a6a10;font-weight:700">Get the Whale Trader's Toolkit</a> — it turns this into a daily system: setup dashboard, whale flow tracker, trade journal with P&amp;L and win rate, watchlist with invalidation lines, and a risk calculator. Educational process, not signals.
+  </div>
+
+  <div class="disclaimer">
+    Educational content only — not financial advice. No performance claims or guarantees. Trading involves risk of loss. All prices and levels shown are historical public market data used as an illustration of the method; they are not recommendations. Always define your invalidation and risk a small, predetermined amount.
+  </div>
+
+</div>
+</body>
+</html>
