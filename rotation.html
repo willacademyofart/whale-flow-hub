@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Narrow Rally Playbook — read a green index carried by one crowd</title>
+<meta name="description" content="Free 1-page playbook for narrow, rotation-led rally days: the index-volume test, the volume-mismatch rule, and the extension check. Built from the November 11, 2026 semiconductor rally." />
+<style>
+  @page { size: letter; margin: 0.28in; }
+  :root{ --ink:#111820; --muted:#5b6b7d; --line:#d8e0e8; --accent:#8a6a10; --accentbg:#fdf6e3; --red:#9b2c2c; --redbg:#fdf0ef; --green:#1f6b46; --greenbg:#eef7f1; }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:10px 12px; color:var(--ink); background:#fff;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    font-size:9.5px; line-height:1.16; -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  .page{ max-width:760px; margin:0 auto }
+  h1{ font-size:17px; margin:0 0 1px; letter-spacing:-.02em }
+  .kicker{ font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); font-weight:800 }
+  .lede{ color:var(--muted); margin:3px 0 6px; font-size:10px }
+  h2{ font-size:9.8px; text-transform:uppercase; letter-spacing:.08em; color:var(--accent);
+      margin:6px 0 3px; padding-bottom:2px; border-bottom:1px solid var(--line) }
+  p{ margin:3px 0 }
+  table{ width:100%; border-collapse:collapse; margin-top:3px; font-size:9.2px }
+  th,td{ border:1px solid var(--line); padding:2px 4px; text-align:left; vertical-align:top }
+  th{ background:#f4f7fa; font-size:9.3px; text-transform:uppercase; letter-spacing:.05em; color:var(--muted) }
+  td.num{ text-align:right; font-variant-numeric:tabular-nums }
+  .rules{ counter-reset:r; list-style:none; padding-left:0 }
+  .rules li{ counter-increment:r; margin:1px 0; padding-left:19px; position:relative }
+  .rules li::before{ content:counter(r); position:absolute; left:0; top:0;
+    width:13px; height:13px; border-radius:50%; background:var(--accentbg); color:var(--accent);
+    font-weight:800; font-size:8.6px; display:flex; align-items:center; justify-content:center }
+  .plan{ background:var(--accentbg); border:1px solid #ecdcab; border-radius:8px; padding:5px 8px; margin-top:3px; font-size:9.3px }
+  .plan b{ color:var(--accent) }
+  .watch{ background:var(--redbg); border:1px solid #e9c9c5; border-radius:8px; padding:5px 8px; margin-top:3px; font-size:9.3px }
+  .watch b{ color:var(--red) }
+  .cta{ margin-top:6px; border:1px solid var(--line); border-left:3px solid var(--accent);
+        border-radius:6px; padding:5px 9px; font-size:9.4px; background:#fbfcfe }
+  .disclaimer{ margin-top:5px; color:var(--muted); font-size:8.3px; border-top:1px solid var(--line); padding-top:4px; line-height:1.25 }
+  .note{ color:var(--muted); font-size:8.8px; margin-top:3px; line-height:1.2 }
+  .two{ display:grid; grid-template-columns:1fr 1fr; gap:8px }
+  .card{ border:1px solid var(--line); border-radius:8px; padding:5px 8px }
+  .card .k{ font-weight:800; font-size:9.6px; margin-bottom:1px }
+  .card .d{ color:var(--muted); font-size:9.2px; line-height:1.24 }
+  .ok{ color:var(--green); font-weight:700 }
+  .bad{ color:var(--red); font-weight:700 }
+  @media print{ body{padding:0} }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="kicker">Narrow Rally Playbook · 1 Page · Free</div>
+  <h1>When the Index Is Green but Only One Crowd Carried It</h1>
+  <div class="lede">A repeatable way to read a rally led by one sector: the index-volume test, the volume-mismatch rule, the extension check, and the 3-line plan.</div>
+
+  <h2>1) The 4-Line Tape Read (do this first, it takes 60 seconds)</h2>
+  <table>
+    <tr><th style="width:24%">Line</th><th style="width:26%">What it tells you</th><th>How you use it</th></tr>
+    <tr><td><b>Index % change</b></td><td>Direction and how much the crowd is bidding.</td><td>A +1.3% index on light volume is a thinner green than a +1.3% index on 1.5x volume.</td></tr>
+    <tr><td><b>Index volume vs 20-day avg</b></td><td>Participation. Price without participation is rotation.</td><td>Under 1.0x = the green is narrower than it looks on screen.</td></tr>
+    <tr><td><b>Breadth proxy (IWM / small caps)</b></td><td>Whether money is entering the market or just moving sideways inside it.</td><td>IWM volume under 1.0x on an up day = money rotating, not entering.</td></tr>
+    <tr><td><b>VIX vs its own 20-day avg</b></td><td>How much fear is priced in.</td><td>VIX below its average on a big up day = calm, but also complacent.</td></tr>
+  </table>
+  <div class="note">Worked on the Nov 11, 2026 session (public market data): SPY 759.81 <b>+1.32%</b> on <b>0.79x</b> its 20-day average volume, QQQ 690.38 +2.31% on 0.86x, IWM 283.09 +0.89% on <b>0.68x</b>, VIX 17.49 (down from 19.46, below its 19.30 average). The index was green on <i>below-average</i> participation — that is a rotation day, not a risk-on wave.</div>
+
+  <h2>2) The Index-Volume Test (1 line)</h2>
+  <table>
+    <tr><th style="width:22%">Index volume vs 20-day avg</th><th style="width:26%">What it usually means</th><th>How to read it</th></tr>
+    <tr><td class="num"><b>&lt; 0.9x</b></td><td>Thin participation</td><td>Price moved on light volume. Something small and loud did the moving. Fade the headline, watch the leaders.</td></tr>
+    <tr><td class="num"><b>0.9x – 1.2x</b></td><td>Normal</td><td>Ordinary session. Wait for a level to actually break before you believe the move.</td></tr>
+    <tr><td class="num"><b>&gt; 1.3x</b></td><td>Broad participation</td><td>Real repositioning. The green is worth trusting more than on a thin day.</td></tr>
+  </table>
+  <div class="note">Nov 11: SPY 0.79x, QQQ 0.86x, IWM 0.68x, XLK 1.18x, SMH 1.24x, SOXX 1.30x. The chips carried volume; the broad market did not. Only the sector ETF did real work.</div>
+
+  <h2>3) The Volume-Mismatch Rule (the part nobody checks)</h2>
+  <div class="two">
+    <div class="card"><div class="k">Biggest volume, smallest move</div><div class="d">The name with the heaviest relative volume that barely moved is where the crowd is changing hands. That is absorption or distribution, not leadership. On Nov 11 that was NVDA: <b>2.03x</b> volume for a <b>+2.87%</b> move — the biggest volume in the group on the smallest gain.</div></div>
+    <div class="card"><div class="k">Largest move, thin volume</div><div class="d">The name ripping with volume near or below its average is the one most likely to be borrowed strength. On Nov 11: SMCI <b>+9.50%</b> on 0.96x, INTC <b>+7.52%</b> on 0.89x, GLW <b>+7.43%</b> on 0.94x.</div></div>
+  </div>
+  <div class="note">Sort your watchlist by volume ratio, then by move. If the top-volume name is not near the top of the gain column, the day's real information is in the gap between those two columns.</div>
+
+  <h2>4) The Extension Check (percent from the 200-day)</h2>
+  <table>
+    <tr><th style="width:26%">Distance from 200-day</th><th style="width:30%">What it usually means</th><th>How to use it</th></tr>
+    <tr><td class="num"><b>+25% or more</b></td><td>Extended</td><td>Biggest gap to a moving average. Entering here needs a tight, predefined stop or you are buying the easy part of the move.</td></tr>
+    <tr><td class="num"><b>−20% or worse</b></td><td>Broken structure</td><td>A bounce inside a broken trend is a trade, but it is a <i>different</i> trade than buying strength.</td></tr>
+    <tr><td class="num"><b>−5% to +5%</b></td><td>Fair value</td><td>Least crowded part of the move. Where the risk/reward usually is best.</td></tr>
+  </table>
+  <div class="note">Nov 11 close: AMD 552.90 sat <b>+31.6%</b> above its 200-day (largest gain in the group <i>and</i> the most extended). NVDA 173.73 sat <b>−15.0%</b> below, GLW 120.46 <b>−23.0%</b> below, INTC 62.50 <b>−28.4%</b> below, SMCI 30.43 <b>−6.6%</b> below. The strongest ticker was the most extended one — a rally running on the most crowded names is the one most likely to hand the move back.</div>
+
+  <h2>5) 5 Rules for a Narrow Rally Day</h2>
+  <ol class="rules">
+    <li><b>Never buy the index because it's green.</b> Check the index volume first. A green index on 0.8x volume is the market telling you who did the work — and it wasn't the average participant.</li>
+    <li><b>Rank your watchlist by volume ratio, not by % move.</b>The volume-mismatch rule finds the real information in a loud session.</li>
+    <li><b>Extension decides position size, not conviction.</b>A +30% extended name gets a smaller size and a tighter stop than the same idea on a name sitting at its 200-day.</li>
+    <li><b>One sector doing all the work means the exit is narrow.</b>When IWM volume is under 1.0x on an up day, there is no broad bid underneath the leaders.</li>
+    <li><b>One level, one trigger, one invalidation.</b>If you can't name all three before entry, you're reacting to the screen, not trading a plan.</li>
+  </ol>
+
+  <h2>6) The 3-Line Plan (write it before you click)</h2>
+  <div class="plan">
+    <b>Line 1 — Trigger:</b> the level that activates the idea (e.g. "holds above the prior-day VWAP after 10:30")<br/>
+    <b>Line 2 — Target:</b> the next level or the measured move<br/>
+    <b>Line 3 — Invalidation:</b> where you're proven wrong and out<br/>
+    <span style="color:#6b5a2a">Example — Trigger: reclaims and holds above VWAP · Target: prior swing high · Invalidation: back under the opening-range low</span>
+  </div>
+
+  <h2>7) The Pre-Market Check (5 minutes)</h2>
+  <div class="watch">
+    <b>1.</b> Index volume vs 20-day avg? &nbsp; <b>2.</b> Breadth proxy (IWM) up or flat on light volume? &nbsp; <b>3.</b> Which name had the biggest volume — and did it move? &nbsp; <b>4.</b> Percent from the 200-day on your name? &nbsp; <b>5.</b> Write trigger, target and invalidation for every name before the open.
+  </div>
+
+  <div class="cta">
+    <b>Want the full system?</b> <a href="toolkit.html" style="color:#8a6a10;font-weight:700">Get the Whale Trader's Toolkit</a> — it turns this into a daily system: setup dashboard, whale flow tracker, trade journal with P&amp;L and win rate, watchlist with invalidation lines, and a risk calculator. Educational process, not signals.
+  </div>
+
+  <div class="disclaimer">
+    Educational content only — not financial advice. No performance claims or guarantees. Trading involves risk of loss. All prices and levels shown are historical public market data used as an illustration of the method; they are not recommendations. Always define your invalidation and risk a small, predetermined amount.
+  </div>
+
+</div>
+</body>
+</html>
