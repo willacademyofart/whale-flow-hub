@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Leader Shock Playbook — read the day the crowd's leader breaks</title>
+<meta name="description" content="Free 1-page playbook for leader-shock days: the shock test, the succession-rotation rule, the gap-close rule, and the extension check. Built from the November 12, 2026 NVIDIA CEO exit session." />
+<style>
+  @page { size: letter; margin: 0.28in; }
+  :root{ --ink:#111820; --muted:#5b6b7d; --line:#d8e0e8; --accent:#8a6a10; --accentbg:#fdf6e3; --red:#9b2c2c; --redbg:#fdf0ef; --green:#1f6b46; --greenbg:#eef7f1; }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:10px 12px; color:var(--ink); background:#fff;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    font-size:8.6px; line-height:1.1; -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  .page{ max-width:760px; margin:0 auto }
+  h1{ font-size:15px; margin:0 0 1px; letter-spacing:-.02em }
+  .kicker{ font-size:9px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); font-weight:800 }
+  .lede{ color:var(--muted); margin:2px 0 4px; font-size:9px }
+  h2{ font-size:8.9px; text-transform:uppercase; letter-spacing:.08em; color:var(--accent);
+      margin:4px 0 2px; padding-bottom:1px; border-bottom:1px solid var(--line) }
+  p{ margin:2px 0 }
+  table{ width:100%; border-collapse:collapse; margin-top:2px; font-size:8.4px }
+  th,td{ border:1px solid var(--line); padding:1.5px 3px; text-align:left; vertical-align:top }
+  th{ background:#f4f7fa; font-size:8.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--muted) }
+  td.num{ text-align:right; font-variant-numeric:tabular-nums }
+  .rules{ counter-reset:r; list-style:none; padding-left:0 }
+  .rules li{ counter-increment:r; margin:0.5px 0; padding-left:16px; position:relative }
+  .rules li::before{ content:counter(r); position:absolute; left:0; top:0;
+    width:11px; height:11px; border-radius:50%; background:var(--accentbg); color:var(--accent);
+    font-weight:800; font-size:7.8px; display:flex; align-items:center; justify-content:center }
+  .plan{ background:var(--accentbg); border:1px solid #ecdcab; border-radius:8px; padding:4px 7px; margin-top:2px; font-size:8.5px }
+  .plan b{ color:var(--accent) }
+  .watch{ background:var(--redbg); border:1px solid #e9c9c5; border-radius:8px; padding:4px 7px; margin-top:2px; font-size:8.5px }
+  .watch b{ color:var(--red) }
+  .cta{ margin-top:4px; border:1px solid var(--line); border-left:3px solid var(--accent);
+        border-radius:6px; padding:4px 8px; font-size:8.6px; background:#fbfcfe }
+  .disclaimer{ margin-top:3px; color:var(--muted); font-size:7.6px; border-top:1px solid var(--line); padding-top:4px; line-height:1.25 }
+  .note{ color:var(--muted); font-size:8.1px; margin-top:2px; line-height:1.16 }
+  .two{ display:grid; grid-template-columns:1fr 1fr; gap:8px }
+  .card{ border:1px solid var(--line); border-radius:8px; padding:4px 7px }
+  .card .k{ font-weight:800; font-size:8.8px; margin-bottom:1px }
+  .card .d{ color:var(--muted); font-size:8.4px; line-height:1.2 }
+  .ok{ color:var(--green); font-weight:700 }
+  .bad{ color:var(--red); font-weight:700 }
+  @media print{ body{padding:0} }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="kicker">Leader Shock Playbook · 1 Page · Free</div>
+  <h1>When the Crowd's Leader Breaks but the Index Barely Moves</h1>
+  <div class="lede">A repeatable way to read a headline-shock session: the shock test, the succession-rotation rule, the gap-close rule, and the extension check — plus the 3-line plan.</div>
+
+  <h2>1) The 4-Line Tape Read (do this first, it takes 60 seconds)</h2>
+  <table>
+    <tr><th style="width:26%">Line</th><th style="width:26%">What it tells you</th><th>How you use it</th></tr>
+    <tr><td><b>Was the index actually down?</b></td><td>Whether the market-wide tape is repricing, or just one name is.</td><td>Index −0.35% while a leader falls 4% is a <i>single-name</i> shock, not a market event. Different play.</td></tr>
+    <tr><td><b>Leader's % change + volume ratio</b></td><td>Whether the crowd is leaving or panicking.</td><td>A big drop on 4x+ volume is a stampede. The gap that opens is not a price you can buy into.</td></tr>
+    <tr><td><b>Direct competitors' % change</b></td><td>Where the displaced money went.</td><td>If the leader's rivals are green on the same day, money <i>rotated</i> — it did not leave.</td></tr>
+    <tr><td><b>Percent from the 200-day on the leaders AND the winners</b></td><td>Who is left crowded, who is not.</td><td>The winners of a shock day are often the most extended names in the group.</td></tr>
+  </table>
+  <div class="note">Worked on the Nov 12, 2026 session (public market data): SPY 757.12 <b>−0.35%</b> on <b>0.77x</b> its 20-day average volume, QQQ 688.17 −0.32% on 0.72x, IWM 278.44 <b>−1.64%</b>, VIX 18.70 (<b>+6.92%</b> from 17.49). The index barely moved. What broke was one company's leadership, and its rivals bid the displaced money the same session.</div>
+
+  <h2>2) The Shock Test (2 questions, 15 seconds)</h2>
+  <table>
+    <tr><th style="width:30%">Question</th><th style="width:24%">Answer</th><th>What it means</th></tr>
+    <tr><td>Did the index fall more than ~1%?</td><td><span class="bad">No</span> — SPY −0.35%</td><td>This is a <b>single-name shock</b>. You do not need to flatten everything. You need to decide one thing about one ticker.</td></tr>
+    <tr><td>Did the broken name trade on more than 2x its average volume?</td><td><span class="bad">Yes</span> — NVDA <b>4.49x</b></td><td>A stampede, not a verdict. The opening gap was a liquidity event. Most of that move got bought back before the close.</td></tr>
+  </table>
+  <div class="note">Both questions answered "no" here — and that combination is the entire lesson: <b>a 4% drop in the leader on 4.5x volume with a flat index is not a market event.</b> It is one company's problem that the rest of the crowd priced around.</div>
+
+  <h2>3) The Succession-Rotation Rule (the money trail)</h2>
+  <div class="two">
+    <div class="card"><div class="k">The rule</div><div class="d">When a leader breaks and its <i>direct competitors</i> are green the same day, the money did not leave the sector — it <b>changed hands inside the sector</b>. The winner of a shock day is the name that took the displaced flow.</div></div>
+    <div class="card"><div class="k">The Nov 12 evidence</div><div class="d">NVDA <b>−4.34%</b> on <b>4.49x</b> volume. The same session: AMD <b>+5.86%</b> on 1.72x, AVGO <b>+5.54%</b> on 1.68x. Displaced demand went into the challengers, not out of the trade.</div></div>
+  </div>
+  <div class="note">But rotation is not free money. On Nov 12 the two winners were also the two most crowded names in the group: AMD closed <b>+38.8% above</b> its 200-day and AVGO <b>−0.8%</b> from its. The winner of a shock day can still be the worst place to buy it.</div>
+
+  <h2>4) The Gap-Close Rule (why "it fell 14%, buy the bottom" fails)</h2>
+  <table>
+    <tr><th style="width:26%">What the tape shows</th><th style="width:26%">What it usually means</th><th>How to use it</th></tr>
+    <tr><td><b>Big intraday low, much smaller close</b></td><td>Forced sellers were absorbed</td><td>The crowd that needed to exit already did. The close is where the remaining holders marked their price — and they marked it much higher.</td></tr>
+    <tr><td><b>Low holds into the close</b></td><td>Distribution still in progress</td><td>No absorption yet. There is no floor to wait for, and the next session is a coin flip.</td></tr>
+    <tr><td><b>Close near the low on 2x+ volume</b></td><td>Real repricing</td><td>Treat the new level as the market's opinion, not a discount.</td></tr>
+  </table>
+  <div class="note">Nov 12: same-day reporting put NVDA down as much as <b>~14%</b> intraday before it closed at <b>−4.34%</b> ($166.19 vs the $173.73 prior close). One article quoted an intraday low of $148.80 that I could not reconcile with the official close — treat that single figure as unconfirmed. The structural point stands on the volume ratio alone: a stampede that closed far off its low means the exits were absorbed.</div>
+
+  <h2>5) The Extension Check (percent from the 200-day)</h2>
+  <table>
+    <tr><th style="width:26%">Distance from 200-day</th><th style="width:30%">What it usually means</th><th>How to use it</th></tr>
+    <tr><td class="num"><b>+25% or more</b></td><td>Extended</td><td>Biggest gap to a moving average. On a shock day this is usually a <i>winner</i> — and the most crowded thing on the board.</td></tr>
+    <tr><td class="num"><b>−20% or worse</b></td><td>Broken structure</td><td>Cheap on a chart is not the same as safe. A leader that breaks its structure usually needs more than one session to build a base.</td></tr>
+    <tr><td class="num"><b>−5% to +5%</b></td><td>Fair value</td><td>Least crowded part of the move. Where the risk/reward usually is best.</td></tr>
+  </table>
+  <div class="note">Nov 12 close: AMD 585.30 sat <b>+38.8%</b> above its 200-day (the most extended name in the group <i>and</i> the biggest winner). NVDA 166.19 sat <b>−18.7%</b> below, SMCI 26.99 <b>−17.1%</b> below, LRCX 233.78 <b>−17.7%</b> below, INTC 61.20 <b>−29.9%</b> below, GLW 119.50 <b>−23.7%</b> below, AMAT 380.95 <b>−14.7%</b> below. The stock that ripped hardest on the bad news was the one already furthest from its average — that is borrowed strength with a short fuse.</div>
+
+  <h2>6) 5 Rules for a Leader-Shock Day</h2>
+  <ol class="rules">
+    <li><b>Run the shock test before you touch anything.</b>Index down more than ~1% = market event, manage everything. Index flat = one ticker, one decision. Do not apply a market playbook to a single-name event.</li>
+    <li><b>Never buy the opening gap of a stampede.</b>A 4x-volume gap down is sellers being forced out, not a price being offered to you. Wait for the close and a level the crowd can actually defend.</li>
+    <li><b>Follow the rotation, then check the extension.</b>The green rival tells you where the money went. The 200-day tells you whether you are the first in line or the last one holding the bag.</li>
+    <li><b>Volume ratio is the ranking key, not % change.</b>Sort the group by volume ratio first. The name with the heaviest relative volume tells you where the real decision-making happened.</li>
+    <li><b>One level, one trigger, one invalidation.</b>If you can't name all three before entry, you're reacting to the screen, not trading a plan.</li>
+  </ol>
+
+  <h2>7) The 3-Line Plan (write it before you click)</h2>
+  <div class="plan">
+    <b>Line 1 — Trigger:</b> the level that activates the idea (e.g. "holds above the prior-day VWAP after 10:30")<br/>
+    <b>Line 2 — Target:</b> the next level or the measured move<br/>
+    <b>Line 3 — Invalidation:</b> where you're proven wrong and out<br/>
+    <span style="color:#6b5a2a">Example — Trigger: reclaims and holds above VWAP · Target: prior swing high · Invalidation: back under the opening-range low</span>
+  </div>
+
+  <h2>8) The Pre-Market Check (5 minutes)</h2>
+  <div class="watch">
+    <b>1.</b> Did the index actually fall more than ~1%? &nbsp; <b>2.</b> Volume ratio on the broken name — stampede or orderly? &nbsp; <b>3.</b> Which direct rivals are green, and on what volume? &nbsp; <b>4.</b> Percent from the 200-day on the name you are about to buy? &nbsp; <b>5.</b> Write trigger, target and invalidation for every name before the open.
+  </div>
+
+  <div class="cta">
+    <b>Want the full system?</b> <a href="toolkit.html" style="color:#8a6a10;font-weight:700">Get the Whale Trader's Toolkit</a> — it turns this into a daily system: setup dashboard, whale flow tracker, trade journal with P&amp;L and win rate, watchlist with invalidation lines, and a risk calculator. Educational process, not signals.
+  </div>
+
+  <div class="disclaimer">
+    Educational content only — not financial advice. No performance claims or guarantees. Trading involves risk of loss. All prices and levels shown are historical public market data used as an illustration of the method; they are not recommendations. Always define your invalidation and risk a small, predetermined amount.
+  </div>
+
+</div>
+</body>
+</html>
